@@ -7,7 +7,7 @@ Transform those pesky backslashes into universal forward slashes inside of your 
 # Install
 
 ```sh
-npm i -g slash
+npm i -g slash-cli
 ```
 
 # Usage
@@ -21,4 +21,9 @@ npm i -g slash
 
 # Motivation
 
-Slash solves backslash problems in my code, but I end up with those pesky backslashes in my clipboard too often 😒
+Slash solves backslash problems in my code, but I end up with those pesky backslashes in my clipboard too often 😒 \
+This is the fix.
+
+---
+
+![](https://pbs.twimg.com/media/DnOavduU0Acjc08.jpg)
