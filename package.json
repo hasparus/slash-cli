@@ -2,9 +2,13 @@
   "name": "slash-cli",
   "version": "1.0.0",
   "description": "A CLI for slash",
-  "main": "index.js",
   "author": "hasparus",
   "license": "MIT",
+  "source": "src/index.ts",
+  "main": "dist/index.js",
+  "bin": {
+    "slash": "dist/index.js"
+  },
   "scripts": {
     "build": "tsc",
     "test": "jest",
@@ -27,18 +31,5 @@
     "hooks": {
       "pre-push": "yarn check"
     }
-  },
-  "@pika/pack": {
-    "pipeline": [
-      [
-        "@pika/plugin-ts-standard-pkg"
-      ],
-      [
-        "@pika/plugin-build-node"
-      ],
-      [
-        "@pika/plugin-bundle-node"
-      ]
-    ]
   }
 }
