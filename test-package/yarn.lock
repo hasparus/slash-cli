@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"slash-cli@D:\\workspace\\slash-cli/slash-cli-v0.1.0.tgz":
-  version "0.1.0"
-  resolved "D:\\workspace\\slash-cli/slash-cli-v0.1.0.tgz#5b0ac6f981aa4eb1c6afbf61dfde98df3d0e1901"
+"slash-cli@D:\\workspace\\slash-cli/slash-cli-v0.1.1.tgz":
+  version "0.1.1"
+  resolved "D:\\workspace\\slash-cli/slash-cli-v0.1.1.tgz#d193ad82486fb6ca571a081afe6ff531613afdfd"
   dependencies:
     slash "^2.0.0"
 
