@@ -1,5 +1,6 @@
 import childProcess from "child_process";
 import { promisify } from "util";
+import { makeArgs } from "./makeArgs";
 
 const exec = promisify(childProcess.exec);
 
@@ -11,10 +12,10 @@ describe("cli", () => {
   const run = (args: string) => exec("node dist/index.js " + args);
 
   it("converts backslashes to forward slashes", async () => {
-    const args =
-      process.platform === "win32"
-        ? "src\\components\\App.js src\\components\\Button.js"
-        : "'src\\components\\App.js' 'src\\components\\Button.js'";
+    const args = makeArgs(
+      "src\\components\\App.js",
+      "src\\components\\Button.js"
+    ).join(" ");
 
     const { stdout } = await run(args);
 

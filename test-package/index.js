@@ -4,6 +4,8 @@ const childProcess = require("child_process");
 const { promisify } = require("util");
 const assert = require("assert");
 
+const { makeArgs } = require("../dist/makeArgs");
+
 const exec = promisify(childProcess.exec);
 
 const execHere = command => exec(`cd ${__dirname} && ${command}`);
@@ -25,12 +27,12 @@ async function main() {
     await execHere("yarn");
     await execHere(`yarn add ${tgzPath}`);
 
-    const testArgs = [
+    const testArgs = makeArgs(
       "src\\components\\App.js",
       "src\\components\\Button.js",
       "foobar",
-      "one/two",
-    ];
+      "one/two"
+    );
 
     result = await execHere(`yarn slash ${testArgs.join(" ")}`);
 
