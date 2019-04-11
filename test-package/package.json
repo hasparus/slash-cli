@@ -1,7 +1,0 @@
-{
-  "license": "MIT",
-  "private": true,
-  "dependencies": {
-    "slash-cli": "..\\slash-cli-v0.1.1.tgz"
-  }
-}
