@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 import slash from "slash";
 
 const args = process.argv.slice(2);
