@@ -38,7 +38,7 @@ async function main() {
     "src/components/App.js",
     "src/components/Button.js",
     "foobar",
-    "one/two  ",
+    "one/two",
   ]);
 }
 
