@@ -11,9 +11,12 @@ describe("cli", () => {
   const run = (args: string) => exec("node dist/index.js " + args);
 
   it("converts backslashes to forward slashes", async () => {
-    const { stdout } = await run(
-      "src\\components\\App.js src\\components\\Button.js"
-    );
+    const args =
+      process.platform === "win32"
+        ? "src\\components\\App.js src\\components\\Button.js"
+        : "'src\\components\\App.js' 'src\\components\\Button.js'";
+
+    const { stdout } = await run(args);
 
     expect(stdout).toBe("src/components/App.js\nsrc/components/Button.js\n");
   });

@@ -17,7 +17,7 @@
     "build": "tsc",
     "jest": "jest",
     "test-package": "node test-package",
-    "test": "yarn build && yarn jest && yarn test-package",
+    "test": "yarn build && yarn jest --runInBand && yarn test-package",
     "prepublish": "yarn test"
   },
   "dependencies": {

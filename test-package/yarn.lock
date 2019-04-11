@@ -4,7 +4,7 @@
 
 "slash-cli@D:\\workspace\\slash-cli/slash-cli-v0.1.1.tgz":
   version "0.1.1"
-  resolved "D:\\workspace\\slash-cli/slash-cli-v0.1.1.tgz#d193ad82486fb6ca571a081afe6ff531613afdfd"
+  resolved "D:\\workspace\\slash-cli/slash-cli-v0.1.1.tgz#a0e74a27aefe2d3a21643e3178541807f58541c7"
   dependencies:
     slash "^2.0.0"
 
