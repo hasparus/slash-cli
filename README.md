@@ -1,6 +1,8 @@
 # slash-cli
 
-### 🔪 A CLI for [sindresorhus/slash](https://github.com/sindresorhus/slash)
+#### 🔪 A CLI for [sindresorhus/slash](https://github.com/sindresorhus/slash)
+
+Transform those pesky backslashes into universal forward slashes inside of your shell.
 
 # Install
 
