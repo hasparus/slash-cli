@@ -1,4 +1,4 @@
-# slash-cli
+# slash-cli [![Build Status](https://travis-ci.org/hasparus/slash-cli.png?branch=master)](https://travis-ci.org/hasparus/slash-cli)
 
 #### 🔪 A CLI for [sindresorhus/slash](https://github.com/sindresorhus/slash)
 
